@@ -14,6 +14,11 @@
 		7D715D08286D4B3F00FC8290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D715D07286D4B3F00FC8290 /* Assets.xcassets */; };
 		7D715D0B286D4B3F00FC8290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D715D09286D4B3F00FC8290 /* LaunchScreen.storyboard */; };
 		7D715D0E286D4B3F00FC8290 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D715D0D286D4B3F00FC8290 /* main.m */; };
+		7D9BD9BF286DFB7B00F25469 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9BD9BE286DFB7B00F25469 /* Image.m */; };
+		7DBE9B21287052070083CFCA /* We Don_t Talk Anymore - Charlie Puth_ Se.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DBE9B20287052070083CFCA /* We Don_t Talk Anymore - Charlie Puth_ Se.mp3 */; };
+		7DBE9B23287052130083CFCA /* Em Con Nho Hay Em Da Quen - Tuan Ngoc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DBE9B22287052130083CFCA /* Em Con Nho Hay Em Da Quen - Tuan Ngoc.mp3 */; };
+		7DBE9B2628705EC20083CFCA /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE9B2528705EC20083CFCA /* AudioViewController.m */; };
+		7DBE9B2928705F710083CFCA /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE9B2828705F710083CFCA /* AudioPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,14 @@
 		7D715D0A286D4B3F00FC8290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D715D0C286D4B3F00FC8290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D715D0D286D4B3F00FC8290 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D9BD9BD286DFB6E00F25469 /* Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		7D9BD9BE286DFB7B00F25469 /* Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		7DBE9B20287052070083CFCA /* We Don_t Talk Anymore - Charlie Puth_ Se.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "We Don_t Talk Anymore - Charlie Puth_ Se.mp3"; sourceTree = "<group>"; };
+		7DBE9B22287052130083CFCA /* Em Con Nho Hay Em Da Quen - Tuan Ngoc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Em Con Nho Hay Em Da Quen - Tuan Ngoc.mp3"; sourceTree = "<group>"; };
+		7DBE9B2428705EC20083CFCA /* AudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		7DBE9B2528705EC20083CFCA /* AudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		7DBE9B2728705F640083CFCA /* AudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		7DBE9B2828705F710083CFCA /* AudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +74,13 @@
 		7D715CFA286D4B3D00FC8290 /* Music Player */ = {
 			isa = PBXGroup;
 			children = (
+				7D9BD9C0286E00F400F25469 /* Controllers */,
+				7D9BD9BC286DFB5400F25469 /* Libs */,
+				7D715D19286D5B0300FC8290 /* Songs */,
 				7D715CFB286D4B3D00FC8290 /* AppDelegate.h */,
 				7D715CFC286D4B3D00FC8290 /* AppDelegate.m */,
 				7D715CFE286D4B3D00FC8290 /* SceneDelegate.h */,
 				7D715CFF286D4B3D00FC8290 /* SceneDelegate.m */,
-				7D715D01286D4B3D00FC8290 /* ViewController.h */,
-				7D715D02286D4B3D00FC8290 /* ViewController.m */,
 				7D715D04286D4B3D00FC8290 /* Main.storyboard */,
 				7D715D07286D4B3F00FC8290 /* Assets.xcassets */,
 				7D715D09286D4B3F00FC8290 /* LaunchScreen.storyboard */,
@@ -74,6 +88,37 @@
 				7D715D0D286D4B3F00FC8290 /* main.m */,
 			);
 			path = "Music Player";
+			sourceTree = "<group>";
+		};
+		7D715D19286D5B0300FC8290 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE9B22287052130083CFCA /* Em Con Nho Hay Em Da Quen - Tuan Ngoc.mp3 */,
+				7DBE9B20287052070083CFCA /* We Don_t Talk Anymore - Charlie Puth_ Se.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		7D9BD9BC286DFB5400F25469 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				7D9BD9BD286DFB6E00F25469 /* Image.h */,
+				7D9BD9BE286DFB7B00F25469 /* Image.m */,
+				7DBE9B2728705F640083CFCA /* AudioPlayer.h */,
+				7DBE9B2828705F710083CFCA /* AudioPlayer.m */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		7D9BD9C0286E00F400F25469 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D715D01286D4B3D00FC8290 /* ViewController.h */,
+				7D715D02286D4B3D00FC8290 /* ViewController.m */,
+				7DBE9B2428705EC20083CFCA /* AudioViewController.h */,
+				7DBE9B2528705EC20083CFCA /* AudioViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DBE9B23287052130083CFCA /* Em Con Nho Hay Em Da Quen - Tuan Ngoc.mp3 in Resources */,
 				7D715D0B286D4B3F00FC8290 /* LaunchScreen.storyboard in Resources */,
 				7D715D08286D4B3F00FC8290 /* Assets.xcassets in Resources */,
+				7DBE9B21287052070083CFCA /* We Don_t Talk Anymore - Charlie Puth_ Se.mp3 in Resources */,
 				7D715D06286D4B3D00FC8290 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +197,9 @@
 				7D715CFD286D4B3D00FC8290 /* AppDelegate.m in Sources */,
 				7D715D0E286D4B3F00FC8290 /* main.m in Sources */,
 				7D715D00286D4B3D00FC8290 /* SceneDelegate.m in Sources */,
+				7D9BD9BF286DFB7B00F25469 /* Image.m in Sources */,
+				7DBE9B2628705EC20083CFCA /* AudioViewController.m in Sources */,
+				7DBE9B2928705F710083CFCA /* AudioPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +350,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vuhuy.Music-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,6 +378,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vuhuy.Music-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
